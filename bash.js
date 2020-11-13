@@ -1,13 +1,10 @@
-process.stdout.write("prompt > ");
+process.stdout.write('prompt > ');
+const pwd = require('./pwd');
 
-process.stdin.on("data", (data) => {
-  const cmd = data.toString().trim();
-
-  if (cmd === "cwd") {
-    process.stdout.write(`Current directory: ${process.cwd()}`);
-  }
-
-  //process.stdout.write("You typed: " + cmd);
-
-  process.stdout.write("\nprompt > ");
-});
+// process.stdin.on('data', (data) => {
+// 	const cmd = data.toString().trim();
+// 	if (cmd === 'cwd') {
+// 		pwd();
+// 	}
+// 	process.stdout.write('\nprompt > ');
+// });
